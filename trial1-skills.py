@@ -87,7 +87,12 @@
 #     		print [word]
 
 
-
+# Expected:
+#     ['hello', 'bacon', 'bacon']
+# Got:
+#     ['hello']
+#     ['bacon']
+#     ['bacon']
 
 
 
@@ -147,23 +152,28 @@
 # #      #####################
 
 
-# def halvesies(number_list):
-#     """Return list of numbers from input list, each divided by two.
+def halvesies(number_list):
+    """Return list of numbers from input list, each divided by two.
 
-#         >>> halvesies([2, 6, -2])
-#         [1.0, 3.0, -1.0]
+        >>> halvesies([2, 6, -2])
+        [1.0, 3.0, -1.0]
 
-#     If any of the numbers are, make sure you don't round off the half:
+    If any of the numbers are, make sure you don't round off the half:
 
-#         >>> halvesies([1, 5])
-#         [0.5, 2.5]
+        >>> halvesies([1, 5])
+        [0.5, 2.5]
 
-#     """
-
+    """
+    return [num / 2.0 for num in number_list]
    
-#     for num in number_list:
-#     	half = num / 2.0
-#    	print half
+    
+
+
+
+
+    # for num in number_list:
+    # 	half = num / 2.0
+   	# print half
 
 #CONSOLE RETURNS:#
 # Expected:
